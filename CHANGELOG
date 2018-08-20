@@ -1,0 +1,45 @@
+Version 0.0.5
+July 10, 2017
+
+- Python 3 fixes
+- Add debug mode to ghe-migrate
+
+Version 0.0.4
+May 24, 2017
+
+- Add ghe-otp as new parameter; this should be an authenticator base key to
+generate OTP/2FA codes
+- Add OTP support to ghe-delete-user
+- Implement ghe-reset-user-email (formerly non-working ghe-fix-user-email)
+
+Version 0.0.3
+May 22, 2017
+
+Fixes:
+- Tab completion on OSX
+- Storing key-value secrets in system keychain
+- Passing of environment variables to executed sub-commands
+
+Rewrite older sub-commands:
+- delete-user
+- maintenance
+
+New sub-commands added:
+- announce
+- fix-user-email
+- migrate
+
+Version 0.0.2
+April 7, 2017
+
+- Set/get/unset secrets via OS keychain
+- Pass secrets via local environment variables to sub commands
+- delete-user sub-command to delete user via selenium automation
+
+Version 0.0.1
+April 4, 2017
+
+- Project start
+- Sub command support
+- Interactive shell support
+- Sub command ghe-maintenance available
